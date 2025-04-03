@@ -1,0 +1,11 @@
+---
+# tasks file for apache-nginx    
+- name: Install "{{dependency}}"  for testing
+  apt:   
+    name: "{{dependency}}"
+    state: latest    
+- name: Start "{{dependency}}"
+  service: 
+    name: "{{dependency}}"
+    state: started
+    enabled: yes
