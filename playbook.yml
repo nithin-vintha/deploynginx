@@ -1,0 +1,4 @@
+- name: installing nginx on second instance
+  hosts:  myhosts
+  roles: 
+    - nginx-role
