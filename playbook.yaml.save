@@ -1,0 +1,16 @@
+---
+- name: Test nginx installation on the other server
+  hosts: instance-sv-worker 
+  become: yes 
+  tasks: 
+    - name: Install nginx for testing
+      apt:   
+       name: nginx
+       state: latest
+    - name: Start nginx
+      service: 
+          name: nginx    
+          state: started
+          enabled: yes
+    - name: Run a jenkins job 
+      
