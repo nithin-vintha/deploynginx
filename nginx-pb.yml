@@ -1,0 +1,6 @@
+---
+- name: Setup Nginx Web Server
+  hosts: webserver
+  become: yes
+  roles:
+    - nginx

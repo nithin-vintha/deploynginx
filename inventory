@@ -1,0 +1,2 @@
+[webserver]
+34.31.197.90 ansible_user=ganideshaboina ansible_ssh_private_key_file=~/.ssh/id_rsa
