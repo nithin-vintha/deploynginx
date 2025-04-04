@@ -5,3 +5,6 @@
   apt:
    name: nginx
    state: present
+- name: print msg
+  debug:
+    msg: "nginx installed successfully"
